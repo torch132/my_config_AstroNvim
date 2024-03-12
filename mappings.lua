@@ -30,6 +30,9 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<C-j>"] = { "<cmd>:m .+1<CR>gv=gv" },
+    -- 整行向上
+    ["<C-k>"] = { "<cmd>:m .-2<CR>gv=gv" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
